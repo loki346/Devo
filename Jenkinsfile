@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/your-username/my-python-project.git'
+                git 'https://github.com/loki346/Devo.git'
             }
         }
 
