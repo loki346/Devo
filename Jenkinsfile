@@ -10,14 +10,16 @@ pipeline {
 
         stage('Install Python') {
             steps {
-                sh 'python3 --version'
-                sh 'pip3 install --upgrade pip'
+                bat '''
+                python --version
+                pip install --upgrade pip
+                '''
             }
         }
 
         stage('Run Script') {
             steps {
-                sh 'python3 main.py'
+                bat 'python main.py'
             }
         }
     }
