@@ -11,8 +11,8 @@ pipeline {
         stage('Install Python') {
             steps {
                 bat '''
-                python --version
-                pip install --upgrade pip
+                    python --version
+                    python -m pip install --upgrade pip
                 '''
             }
         }
